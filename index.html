@@ -17,12 +17,32 @@
   <body>
     <nav>
       <ul>
-        <li class="brand"><img src="./assets/logo.png" alt="spotify    " /></li>
+        <li class="brand">
+          <img src="./assets/logo.png" alt="spotify    " />Spotify
+        </li>
         <li>Home</li>
         <li>Search</li>
       </ul>
     </nav>
 
+    <div class="container">
+      <h1>Playlists</h1>
+      <div class="songList"></div>
+      <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+      <div class="icons">
+        <i class="fa-sharp fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-circle-play"></i>
+        <i class="fa-sharp fa-solid fa-forward-step"></i>
+      </div>
+      <input type="range" min="0" max="100" name="range" id="myProgressBar" />
+    </div>
+    <script
+      src="https://kit.fontawesome.com/8bbdbd980b.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>

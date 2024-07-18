@@ -16,8 +16,63 @@ nav {
 
 nav ul {
   display: flex;
+
   list-style-type: none;
+  height: 65px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
 }
 body {
   background-color: gray;
+}
+
+.brand img {
+  width: 56px;
+  padding-left: 10px;
+}
+.container {
+  min-height: 79.6vh;
+}
+
+.bottom {
+  height: 91px;
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+.icons {
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 35px;
+}
+.fa-sharp {
+  font-size: 27px;
+
+}
+.fa-solid {
+  font-size: 27px;
+
+  margin-right: 20px;
+}
+#myProgressBar {
+  width: 58vh;
+
+  text-align: center;
+  background-color: aliceblue;
 }
