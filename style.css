@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav {
+  font-family: "DM Serif Display", serif;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+body {
+  background-color: gray;
+}
