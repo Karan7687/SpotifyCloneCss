@@ -26,16 +26,20 @@
     </nav>
 
     <div class="container">
-      <h1>Playlists</h1>
+      
       <div class="songList"></div>
+      <h1>Playlists</h1>
       <div class="songBanner"></div>
     </div>
 
     <div class="bottom">
       <div class="icons">
-        <i class="fa-sharp fa-solid fa-backward-step"></i>
+        <i class="fa-solid fa-shuffle" id="shuffle"></i>
+        <i class="fa-sharp fa-solid fa-backward-step" id="back"></i>
         <i class="fa-solid fa-circle-play"></i>
-        <i class="fa-sharp fa-solid fa-forward-step"></i>
+        <i class="fa-sharp fa-solid fa-forward-step" id="forward"></i>
+
+        <i class="fa-duotone fa-solid fa-repeat" id="repeat"></i>
       </div>
       <input type="range" min="0" max="100" name="range" id="myProgressBar" />
     </div>

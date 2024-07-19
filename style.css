@@ -42,7 +42,15 @@ body {
   padding-left: 10px;
 }
 .container {
-  min-height: 79.6vh;
+  min-height: 64.4vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 10px;
+  width: 70%;
+  margin: 23px auto;
+  border-radius: 10px;
+  padding: 35px;
 }
 
 .bottom {
@@ -54,6 +62,7 @@ body {
   justify-content: center;
   color: white;
   flex-direction: column;
+  
 }
 
 .icons {
@@ -61,14 +70,22 @@ body {
   margin-bottom: 13px;
   margin-left: 35px;
 }
-.fa-sharp {
-  font-size: 27px;
 
+#back,
+#forward,
+#repeat,
+#shuffle {
+  font-size: 20px;
 }
+
 .fa-solid {
-  font-size: 27px;
+  font-size: 32px;
 
   margin-right: 20px;
+}
+
+.icons i {
+  cursor: pointer;
 }
 #myProgressBar {
   width: 58vh;
