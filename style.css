@@ -77,8 +77,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   justify-content: left; */
-width: 399px;
-
+  width: 399px;
 }
 
 .songItem img {
@@ -93,16 +92,15 @@ width: 399px;
   background-color: black;
   bottom: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+ 
   color: white;
-  flex-direction: column;
+  /* vertical-align: middle; */
 }
 
-.icons {
-  margin-top: 13px;
-  margin-bottom: 13px;
-  margin-left: 35px;
+.bottom img {
+  width: 55px;
+  margin-right: 10px;
 }
 
 #back,
@@ -118,14 +116,20 @@ width: 399px;
   margin-right: 20px;
 }
 
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .icons i {
   cursor: pointer;
 }
 #myProgressBar {
-  width: 58vh;
-
+  width: 75vh;
   text-align: center;
   background-color: aliceblue;
+  margin-left: 40px;
 }
 #play2 {
   margin-left: 19px;
@@ -135,4 +139,15 @@ width: 399px;
   display: flex;
   align-items: end;
   justify-content: right;
+}
+/* .current {
+  text-align: start;
+} */
+.bottomspan {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px;
+
 }
