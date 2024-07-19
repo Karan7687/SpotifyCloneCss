@@ -46,14 +46,17 @@ body {
   background-color: black;
   color: white;
   display: flex;
-  margin: 10px;
+  margin: 23px;
   width: 70%;
   margin: 23px auto;
   border-radius: 10px;
   padding: 35px;
+  background-image: url('./assets/bg.jpg');
+  background-position: center;
 }
 
 .bottom {
+  position: sticky;
   height: 91px;
   background-color: black;
   bottom: 0;
