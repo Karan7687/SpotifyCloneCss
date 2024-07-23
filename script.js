@@ -41,7 +41,7 @@ songItems.forEach((element, i) => {
 });
 
 masterPlay.addEventListener("click", () => {
-  console.log("Clicked It !");
+  //console.log("Clicked It !");
 
   if (audioElement.paused || audioElement.currentTime <= 0) {
     audioElement.play();
@@ -71,3 +71,20 @@ myProgreassBar.addEventListener("change", () => {
   audioElement.currentTime =
     (myProgressBar.value * audioElement.duration) / 100;
 });
+
+const makeAllPlays = () => {
+  Array.from(document.getElementsByClassName("songItemPlay")).forEach((ele) => {
+    ele.classList.remove("fa-pause");
+    ele.classList.add("fa-play");
+  });
+};
+
+
+Array.from(document.getElementsByClassName("songItemPlay")).forEach((ele) => {
+  ele.addEventListener("click", (e) => {
+    makeAllPlays();
+    e.target.classList.remove("fa-play");
+    e.target.classList.add("fa-pause");
+  });
+});
+
