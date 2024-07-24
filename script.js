@@ -75,16 +75,21 @@ myProgreassBar.addEventListener("change", () => {
 const makeAllPlays = () => {
   Array.from(document.getElementsByClassName("songItemPlay")).forEach((ele) => {
     ele.classList.remove("fa-pause");
-    ele.classList.add("fa-play");
+    // ele.classList.add("fa-play");
   });
 };
 
+//array of list of songs and click buttons
 
 Array.from(document.getElementsByClassName("songItemPlay")).forEach((ele) => {
   ele.addEventListener("click", (e) => {
     makeAllPlays();
+
+    // index=parseInt(e.target.id);
     e.target.classList.remove("fa-play");
     e.target.classList.add("fa-pause");
+    audioElement.src = "./assets/songs/1.mp3";
+    audioElement.currentTime = 0;
+    audioElement.play();
   });
 });
-
