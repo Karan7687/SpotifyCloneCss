@@ -108,3 +108,17 @@ audioElement.addEventListener("ended", () => {
   gif.style.opacity = 0;
   makeAllPlays();
 });
+
+document.getElementById("next").addEventListener("click", () => {
+  if (songIndex > 9) {
+    songIndex = 0;
+  } else {
+    songIndex += 1;
+  }
+  audioElement.src = songs[songIndex].filePath;
+    audioElement.currentTime = 0;
+    audioElement.play();
+
+    masterPlay.classList.remove("fa-circle-play");
+    masterPlay.classList.add("fa-circle-pause");
+});
