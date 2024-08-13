@@ -3,6 +3,7 @@ let audioElement = new Audio("./assets/songs/1.mp3");
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("playingGif");
+let masterSongName = document.getElementById("masterSongName");
 let songItems = Array.from(document.getElementsByClassName("songItem"));
 
 let songs = [
@@ -92,6 +93,8 @@ Array.from(document.getElementsByClassName("songItemPlay")).forEach((ele) => {
     e.target.classList.add("fa-pause");
 
     audioElement.src = songs[songIndex].filePath;
+
+    masterSongName.innerText = songs[songIndex].songName;
     audioElement.currentTime = 0;
     audioElement.play();
 
@@ -116,6 +119,8 @@ document.getElementById("forward").addEventListener("click", () => {
     songIndex += 1;
   }
   audioElement.src = songs[songIndex].filePath;
+
+  masterSongName.innerText = songs[songIndex].songName;
   audioElement.currentTime = 0;
   audioElement.play();
 
@@ -130,6 +135,7 @@ document.getElementById("back").addEventListener("click", () => {
     songIndex -= 1;
   }
   audioElement.src = songs[songIndex].filePath;
+  masterSongName.innerText = songs[songIndex].songName;
   audioElement.currentTime = 0;
   audioElement.play();
 
