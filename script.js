@@ -109,16 +109,30 @@ audioElement.addEventListener("ended", () => {
   makeAllPlays();
 });
 
-document.getElementById("next").addEventListener("click", () => {
+document.getElementById("forward").addEventListener("click", () => {
   if (songIndex > 9) {
     songIndex = 0;
   } else {
     songIndex += 1;
   }
   audioElement.src = songs[songIndex].filePath;
-    audioElement.currentTime = 0;
-    audioElement.play();
+  audioElement.currentTime = 0;
+  audioElement.play();
 
-    masterPlay.classList.remove("fa-circle-play");
-    masterPlay.classList.add("fa-circle-pause");
+  masterPlay.classList.remove("fa-circle-play");
+  masterPlay.classList.add("fa-circle-pause");
+});
+
+document.getElementById("back").addEventListener("click", () => {
+  if (songIndex <= 0) {
+    songIndex = 0;
+  } else {
+    songIndex -= 1;
+  }
+  audioElement.src = songs[songIndex].filePath;
+  audioElement.currentTime = 0;
+  audioElement.play();
+
+  masterPlay.classList.remove("fa-circle-play");
+  masterPlay.classList.add("fa-circle-pause");
 });
